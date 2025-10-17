@@ -219,7 +219,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <Container>
             <Reveal>
               <InstagramGallery
-                username={artist.name ? artist.name.split(' ')[0] : ''}
+                username={(artist.name.split(' ')[0] || '')}
                 profileUrl={artist.instagram}
                 posts={artist.instagramPosts}
               />

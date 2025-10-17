@@ -17,7 +17,7 @@ export function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0];
+  const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0]!;
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

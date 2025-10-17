@@ -87,7 +87,15 @@ https://inklab-mastery.vercel.app`;
           {/* WhatsApp Option */}
           <Card className="relative overflow-hidden border-2 border-[#25D366]/20 hover:border-[#25D366]/50 transition-all duration-300 group cursor-pointer">
             <div
+              role="button"
+              tabIndex={0}
               onClick={handleWhatsAppClick}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleWhatsAppClick();
+                }
+              }}
               className="p-8 text-center"
             >
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366]/10 group-hover:bg-[#25D366]/20 transition-colors">

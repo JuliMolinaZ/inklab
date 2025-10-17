@@ -34,7 +34,7 @@ export default function RootLayout({
   const businessSchema = getLocalBusinessSchema();
 
   return (
-    <html className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="es" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         <script
           type="application/ld+json"

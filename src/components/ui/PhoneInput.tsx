@@ -20,7 +20,7 @@ const countryCodes = [
 ];
 
 export function PhoneInput({ name, label, required, error, placeholder }: PhoneInputProps) {
-  const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]); // Colombia por defecto
+  const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]!); // Colombia por defecto
   const inputId = useId();
 
   return (

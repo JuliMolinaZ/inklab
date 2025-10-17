@@ -51,6 +51,7 @@ export function VideoAvatar({
         aria-label={alt}
       >
         <source src={src} type="video/mp4" />
+        <track kind="captions" />
         Su navegador no soporta el elemento de video.
       </video>
     </div>

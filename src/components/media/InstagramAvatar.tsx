@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import { InstagramEmbed } from '@/components/social/InstagramEmbed';
 import { VideoAvatar } from '@/components/media/VideoAvatar';
 
 interface InstagramAvatarProps {
