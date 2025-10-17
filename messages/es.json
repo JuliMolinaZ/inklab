@@ -1,0 +1,147 @@
+{
+  "common": {
+    "location": "Pereira, Risaralda",
+    "bookNow": "Reservar Cita",
+    "learnMore": "Saber Más",
+    "viewAll": "Ver Todo",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "years": "años"
+  },
+  "nav": {
+    "home": "Inicio",
+    "portfolio": "Portfolio",
+    "artists": "Artistas",
+    "booking": "Reservas",
+    "about": "Nosotros"
+  },
+  "hero": {
+    "title": "Arte en tu piel,",
+    "titleGradient": "historias para siempre",
+    "subtitle": "Estudio profesional de tatuajes en Pereira, Risaralda. Especializado en diseños únicos y técnicas avanzadas. Más de 10 años transformando ideas en arte corporal.",
+    "cta": {
+      "book": "Reserva tu cita",
+      "portfolio": "Ver portfolio"
+    }
+  },
+  "featured": {
+    "title": "Trabajos destacados",
+    "subtitle": "Explora algunos de nuestros proyectos más recientes",
+    "viewAll": "Ver todo el portfolio"
+  },
+  "artists": {
+    "title": "Nuestros Artistas",
+    "subtitle": "Conoce al equipo detrás de cada diseño",
+    "badge": "Los Maestros del Arte Corporal",
+    "description": "Cada artista en Inklab Mastery es un maestro en su especialidad, con años de experiencia y pasión por transformar ideas en arte permanente. Conoce a quienes harán realidad tu tatuaje soñado.",
+    "yearsExperience": "años de experiencia",
+    "specialties": "Especialidades:",
+    "viewProfile": "Ver Perfil Completo",
+    "instagram": "Instagram",
+    "followOn": "Sígueme en Instagram",
+    "featuredArtist": "Artista Destacado",
+    "reserveWith": "Reservar con",
+    "cta": {
+      "title": "¿No sabes con quién empezar?",
+      "subtitle": "En tu consulta gratuita te ayudaremos a elegir el artista perfecto para tu estilo y visión. Cada uno tiene su especialidad única.",
+      "button": "Reservar Consulta Gratuita",
+      "portfolio": "Ver Portfolio Completo"
+    }
+  },
+  "portfolio": {
+    "title": "Nuestro Portfolio",
+    "badge": "Arte que Perdura",
+    "subtitle": "Cada pieza cuenta una historia. Explora nuestra colección de obras únicas",
+    "by": "Por",
+    "gallery": "Galería de Trabajos",
+    "gallerySubtitle": "Explora algunos de los trabajos más destacados de",
+    "completePortfolio": "Portfolio Completo",
+    "completePortfolioSubtitle": "tatuajes realizados por",
+    "pieces": "obras únicas"
+  },
+  "booking": {
+    "title": "Reserva tu Cita",
+    "subtitle": "Elige la forma más cómoda de contactarnos",
+    "quickContact": {
+      "whatsapp": {
+        "description": "Respuesta rápida y directa",
+        "button": "Chatear ahora",
+        "response": "Te respondemos en minutos"
+      },
+      "form": {
+        "title": "Formulario",
+        "description": "Describe tu idea en detalle",
+        "button": "Ver formulario",
+        "response": "Te contactamos en 24h"
+      }
+    },
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "bodyArea": "Zona del cuerpo",
+      "bodyAreaPlaceholder": "Ej: Brazo, espalda, pierna...",
+      "size": "Tamaño aproximado",
+      "sizePlaceholder": "Ej: Pequeño, mediano, manga completa...",
+      "message": "Describe tu idea",
+      "messagePlaceholder": "Cuéntanos sobre el diseño que tienes en mente, estilo preferido, referencias, etc.",
+      "reference": "Referencia (opcional)",
+      "referencePlaceholder": "https://... (enlace a imagen de referencia)",
+      "referenceHelper": "Puedes compartir un enlace a una imagen de referencia",
+      "disclaimer": "Al enviar abrirás WhatsApp con tus datos pre-llenados",
+      "submit": "Enviar por WhatsApp"
+    },
+    "success": {
+      "title": "¡WhatsApp abierto!",
+      "message": "Hemos preparado tu mensaje con todos los detalles. Solo presiona enviar en WhatsApp para completar tu solicitud.",
+      "response": "Te responderemos en minutos 💚",
+      "another": "Enviar otra consulta"
+    },
+    "contact": {
+      "phone": "Teléfono",
+      "email": "Email",
+      "hours": "Horario",
+      "weekdays": "Lun-Vie: 10:00-20:00",
+      "saturday": "Sáb: 10:00-18:00"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para tu próximo tatuaje?",
+    "subtitle": "Agenda una consulta gratuita y convierte tu idea en realidad",
+    "button": "Reservar cita ahora",
+    "artist": {
+      "title": "¿Listo para trabajar con {name}?",
+      "subtitle": "Agenda tu consulta gratuita y comienza a crear tu tatuaje soñado",
+      "button": "Reservar Cita",
+      "back": "← Ver todos los artistas"
+    }
+  },
+  "location": {
+    "title": "Encuéntranos",
+    "subtitle": "Visítanos en nuestro estudio en el corazón de Pereira",
+    "address": "Cra. 17 #11-10",
+    "city": "Pereira, Risaralda",
+    "country": "Colombia",
+    "getDirections": "Cómo llegar",
+    "hours": {
+      "title": "Horario de atención",
+      "weekdays": "Lun - Vie: 10:00 AM - 8:00 PM",
+      "saturday": "Sábados: 10:00 AM - 6:00 PM",
+      "sunday": "Domingos: Cerrado"
+    }
+  },
+  "footer": {
+    "tagline": "Transformando ideas en arte corporal",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados.",
+    "location": "Pereira, Risaralda"
+  },
+  "instagram": {
+    "followMe": "Sígueme en Instagram",
+    "viewProfile": "Ver perfil completo",
+    "posts": "publicaciones"
+  }
+}

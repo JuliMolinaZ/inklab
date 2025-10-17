@@ -1,0 +1,12 @@
+COLOCA AQUÍ LAS FOTOS DE PERFIL DE LOS ARTISTAS:
+
+1. isabela.jpg  (foto de perfil de Isabela)
+2. barragan.jpg (foto de perfil de Barragan)
+3. cabeto.jpg   (foto de perfil de Cabeto)
+
+CÓMO DESCARGAR:
+1. Ve a Instagram de cada artista
+2. Click derecho en la foto de perfil → "Guardar imagen como..."
+3. Guarda aquí con el nombre exacto
+
+O consulta el archivo COMO-AGREGAR-IMAGENES.md en la raíz del proyecto

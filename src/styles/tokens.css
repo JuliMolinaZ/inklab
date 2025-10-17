@@ -1,0 +1,202 @@
+/**
+ * Design Tokens
+ *
+ * Central source of truth for all design values.
+ * Customize theme by editing these CSS variables.
+ */
+
+:root {
+  /* ========================================
+     COLOR PALETTE
+     Japanese Dark aesthetic with high contrast
+     ======================================== */
+
+  /* Background colors */
+  --color-bg: #0a0a0a;
+  --color-bg-muted: #141414;
+  --color-bg-subtle: #1a1a1a;
+
+  /* Foreground colors */
+  --color-fg: #f5f5f5;
+  --color-fg-muted: #a3a3a3;
+  --color-fg-subtle: #737373;
+
+  /* Accent colors - Red for traditional Japanese ink */
+  --color-accent: #dc2626;
+  --color-accent-fg: #ffffff;
+  --color-accent-hover: #b91c1c;
+
+  /* Border colors */
+  --color-border: #262626;
+  --color-border-muted: #1a1a1a;
+
+  /* Semantic colors */
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  /* Font families - defined via next/font */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', monospace;
+
+  /* Fluid typography - mobile-first scaling */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.375rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.625rem);
+  --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.625rem);
+  --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.25rem);
+  --text-5xl: clamp(3rem, 2.5rem + 2.5vw, 4.5rem);
+  --text-6xl: clamp(3.75rem, 3rem + 3.75vw, 6rem);
+
+  /* ========================================
+     SPACING
+     ======================================== */
+
+  --space-xs: 0.25rem; /* 4px */
+  --space-sm: 0.5rem; /* 8px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+  --space-3xl: 4rem; /* 64px */
+  --space-4xl: 6rem; /* 96px */
+  --space-5xl: 8rem; /* 128px */
+
+  /* ========================================
+     LAYOUT
+     ======================================== */
+
+  --container-xs: 320px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  /* Max content width for reading */
+  --prose-width: 65ch;
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-2xl: 1.5rem; /* 24px */
+  --radius-3xl: 2rem; /* 32px */
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     Mobile-optimized - subtle for performance
+     ======================================== */
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+  --shadow-inner-sm: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /* ========================================
+     Z-INDEX SCALE
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-overlay: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-toast: 1600;
+  --z-tooltip: 1700;
+
+  /* ========================================
+     ANIMATION
+     ======================================== */
+
+  --transition-fast: 150ms;
+  --transition-base: 250ms;
+  --transition-slow: 350ms;
+  --transition-slower: 500ms;
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+     EFFECTS
+     ======================================== */
+
+  /* Film grain texture for authentic tattoo studio feel */
+  --grain-opacity: 0.03;
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 16px;
+}
+
+/* ========================================
+   ALTERNATIVE THEMES
+   ======================================== */
+
+/* Cyberpunk Neon variant */
+[data-theme='cyberpunk'] {
+  --color-bg: #0a0118;
+  --color-bg-muted: #150228;
+  --color-bg-subtle: #1f0338;
+
+  --color-accent: #00ff99;
+  --color-accent-fg: #0a0118;
+  --color-accent-hover: #00cc7a;
+
+  --color-border: #2d0a4d;
+}
+
+/* Minimal Gallery variant */
+[data-theme='minimal'] {
+  --color-bg: #ffffff;
+  --color-bg-muted: #fafafa;
+  --color-bg-subtle: #f5f5f5;
+
+  --color-fg: #0a0a0a;
+  --color-fg-muted: #525252;
+  --color-fg-subtle: #737373;
+
+  --color-accent: #0a0a0a;
+  --color-accent-fg: #ffffff;
+  --color-accent-hover: #262626;
+
+  --color-border: #e5e5e5;
+  --color-border-muted: #f5f5f5;
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  :root {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+    --shadow-sm: none;
+    --shadow: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-xl: none;
+    --shadow-2xl: none;
+  }
+}

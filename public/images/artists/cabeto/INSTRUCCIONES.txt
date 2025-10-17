@@ -1,0 +1,13 @@
+COLOCA AQUÍ 3 FOTOS DE TATUAJES DE CABETO:
+
+Necesitas:
+- 1.jpg (mejor tatuaje de Cabeto)
+- 2.jpg (segundo mejor tatuaje)
+- 3.jpg (tercer mejor tatuaje)
+
+CÓMO DESCARGAR DE INSTAGRAM:
+1. Ve a https://www.instagram.com/cabeto.sanchez/
+2. Usa una extensión de descarga o toma screenshots
+3. Guarda las imágenes aquí con los nombres exactos: 1.jpg, 2.jpg, 3.jpg
+
+Ver instrucciones completas en: COMO-AGREGAR-IMAGENES.md (raíz del proyecto)

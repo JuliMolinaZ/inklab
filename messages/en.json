@@ -1,0 +1,147 @@
+{
+  "common": {
+    "location": "Pereira, Risaralda",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "years": "years"
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "artists": "Artists",
+    "booking": "Booking",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Art on your skin,",
+    "titleGradient": "stories forever",
+    "subtitle": "Professional tattoo studio in Pereira, Risaralda. Specialized in unique designs and advanced techniques. Over 10 years transforming ideas into body art.",
+    "cta": {
+      "book": "Book your appointment",
+      "portfolio": "View portfolio"
+    }
+  },
+  "featured": {
+    "title": "Featured Work",
+    "subtitle": "Explore some of our most recent projects",
+    "viewAll": "View full portfolio"
+  },
+  "artists": {
+    "title": "Our Artists",
+    "subtitle": "Meet the team behind each design",
+    "badge": "Masters of Body Art",
+    "description": "Every artist at Inklab Mastery is a master in their specialty, with years of experience and passion for transforming ideas into permanent art. Meet those who will make your dream tattoo a reality.",
+    "yearsExperience": "years of experience",
+    "specialties": "Specialties:",
+    "viewProfile": "View Full Profile",
+    "instagram": "Instagram",
+    "followOn": "Follow me on Instagram",
+    "featuredArtist": "Featured Artist",
+    "reserveWith": "Book with",
+    "cta": {
+      "title": "Not sure where to start?",
+      "subtitle": "In your free consultation, we'll help you choose the perfect artist for your style and vision. Each one has their own unique specialty.",
+      "button": "Book Free Consultation",
+      "portfolio": "View Full Portfolio"
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "badge": "Art That Endures",
+    "subtitle": "Every piece tells a story. Explore our collection of unique works",
+    "by": "By",
+    "gallery": "Work Gallery",
+    "gallerySubtitle": "Explore some of the most outstanding works by",
+    "completePortfolio": "Complete Portfolio",
+    "completePortfolioSubtitle": "tattoos done by",
+    "pieces": "unique pieces"
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "subtitle": "Choose the most convenient way to contact us",
+    "quickContact": {
+      "whatsapp": {
+        "description": "Fast and direct response",
+        "button": "Chat now",
+        "response": "We respond in minutes"
+      },
+      "form": {
+        "title": "Form",
+        "description": "Describe your idea in detail",
+        "button": "View form",
+        "response": "We'll contact you in 24h"
+      }
+    },
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phone": "Phone",
+      "bodyArea": "Body area",
+      "bodyAreaPlaceholder": "E.g.: Arm, back, leg...",
+      "size": "Approximate size",
+      "sizePlaceholder": "E.g.: Small, medium, full sleeve...",
+      "message": "Describe your idea",
+      "messagePlaceholder": "Tell us about the design you have in mind, preferred style, references, etc.",
+      "reference": "Reference (optional)",
+      "referencePlaceholder": "https://... (link to reference image)",
+      "referenceHelper": "You can share a link to a reference image",
+      "disclaimer": "Submitting will open WhatsApp with your pre-filled data",
+      "submit": "Send via WhatsApp"
+    },
+    "success": {
+      "title": "WhatsApp opened!",
+      "message": "We've prepared your message with all the details. Just press send in WhatsApp to complete your request.",
+      "response": "We'll respond in minutes 💚",
+      "another": "Send another inquiry"
+    },
+    "contact": {
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours",
+      "weekdays": "Mon-Fri: 10:00-20:00",
+      "saturday": "Sat: 10:00-18:00"
+    }
+  },
+  "cta": {
+    "title": "Ready for your next tattoo?",
+    "subtitle": "Schedule a free consultation and turn your idea into reality",
+    "button": "Book now",
+    "artist": {
+      "title": "Ready to work with {name}?",
+      "subtitle": "Schedule your free consultation and start creating your dream tattoo",
+      "button": "Book Appointment",
+      "back": "← View all artists"
+    }
+  },
+  "location": {
+    "title": "Find Us",
+    "subtitle": "Visit our studio in the heart of Pereira",
+    "address": "Cra. 17 #11-10",
+    "city": "Pereira, Risaralda",
+    "country": "Colombia",
+    "getDirections": "Get Directions",
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Mon - Fri: 10:00 AM - 8:00 PM",
+      "saturday": "Saturday: 10:00 AM - 6:00 PM",
+      "sunday": "Sunday: Closed"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming ideas into body art",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "location": "Pereira, Risaralda"
+  },
+  "instagram": {
+    "followMe": "Follow me on Instagram",
+    "viewProfile": "View full profile",
+    "posts": "posts"
+  }
+}

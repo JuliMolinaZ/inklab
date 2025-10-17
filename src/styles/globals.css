@@ -1,0 +1,376 @@
+@import './tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Global Styles
+ * Mobile-first, performance-optimized
+ */
+
+@layer base {
+  /* ========================================
+     RESET & NORMALIZE
+     ======================================== */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings:
+      'kern' 1,
+      'liga' 1,
+      'calt' 1;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-bg font-sans text-fg;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Film grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: var(--z-overlay);
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h5 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h6 {
+    @apply text-lg md:text-xl;
+  }
+
+  p {
+    text-wrap: pretty;
+    max-width: var(--prose-width);
+  }
+
+  a {
+    @apply text-fg;
+    text-decoration: none;
+    transition: color var(--transition-fast) var(--ease-out);
+  }
+
+  a:hover {
+    @apply text-accent;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+  }
+
+  /* ========================================
+     FOCUS STATES
+     Accessible and beautiful
+     ======================================== */
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* ========================================
+     IMAGES & MEDIA
+     ======================================== */
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  img {
+    /* Prevent CLS with aspect-ratio */
+    aspect-ratio: attr(width) / attr(height);
+  }
+
+  /* ========================================
+     SELECTION
+     ======================================== */
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+  }
+
+  /* ========================================
+     SCROLLBAR (for desktop)
+     ======================================== */
+
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg-muted);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: var(--radius-full);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-fg-subtle);
+    }
+  }
+}
+
+@layer components {
+  /* ========================================
+     UTILITY CLASSES
+     ======================================== */
+
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: var(--container-2xl);
+  }
+
+  .section {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  /* Visually hidden but accessible to screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Skip to main content link */
+  .skip-link {
+    @apply sr-only focus:not-sr-only;
+    @apply fixed left-4 top-4 z-tooltip;
+    @apply rounded-lg bg-accent px-4 py-2 text-accent-fg;
+    @apply font-medium;
+  }
+
+  /* Prose - for MDX content */
+  .prose {
+    @apply text-fg-muted;
+    max-width: var(--prose-width);
+  }
+
+  .prose h2 {
+    @apply mb-4 mt-8 text-fg;
+  }
+
+  .prose h3 {
+    @apply mb-3 mt-6 text-fg;
+  }
+
+  .prose p {
+    @apply mb-4;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-4 ml-6;
+  }
+
+  .prose li {
+    @apply mb-2;
+  }
+
+  .prose a {
+    @apply text-accent underline underline-offset-2;
+  }
+
+  .prose a:hover {
+    @apply text-accent-hover;
+  }
+
+  .prose code {
+    @apply rounded bg-bg-muted px-1.5 py-0.5 font-mono text-sm;
+  }
+
+  .prose pre {
+    @apply mb-4 overflow-x-auto rounded-lg bg-bg-muted p-4;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Mobile-friendly tap targets */
+  .tap-target {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Aspect ratio utilities */
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+  .aspect-landscape {
+    aspect-ratio: 4 / 3;
+  }
+  .aspect-wide {
+    aspect-ratio: 16 / 9;
+  }
+  .aspect-ultrawide {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+@layer utilities {
+  /* ========================================
+     ANIMATION UTILITIES
+     ======================================== */
+
+  .animate-in {
+    animation: fadeIn var(--transition-slow) var(--ease-out);
+  }
+
+  .animate-out {
+    animation: fadeOut var(--transition-slow) var(--ease-in);
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    background: linear-gradient(to right, var(--color-fg), var(--color-fg-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Accent gradient */
+  .accent-gradient {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
+  }
+
+  /* Touch device optimizations */
+  @media (pointer: coarse) {
+    .hover\:scale-105:hover {
+      transform: none;
+    }
+  }
+}
+
+/* ========================================
+   LOADING STATES
+   ======================================== */
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.skeleton {
+  @apply animate-pulse rounded bg-bg-muted;
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  body::before {
+    display: none;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
